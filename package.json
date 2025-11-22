@@ -2,9 +2,13 @@
   "name": "sveltekit-video-element",
   "version": "0.0.1",
   "description": "A sveltekit video element component supporting JWPlayer, VideoJS, Cloudflare Stream and multiple video providers",
+  "type": "module",
+  "main": "./dist/index.js",
+  "svelte": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/liuyueyi/sveltekit-video-element.git",
+    "url": "git+https://github.com/ketarketir/sveltekit-video-element.git",
     "directory": "sveltekit-video-element"
   },
   "scripts": {
@@ -13,6 +17,7 @@
     "preview": "vite preview",
     "prepare": "svelte-kit sync || echo ''",
     "prepack": "svelte-kit sync && svelte-package && publint",
+    "prepublishOnly": "npm run package",
     "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
     "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
     "format": "prettier --write .",
@@ -23,19 +28,58 @@
   },
   "files": [
     "dist",
+    "README.md",
     "!dist/**/*.test.*",
     "!dist/**/*.spec.*"
   ],
   "sideEffects": [
     "**/*.css"
   ],
-  "svelte": "./dist/index.js",
-  "types": "./dist/index.d.ts",
-  "type": "module",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
-      "svelte": "./dist/index.js"
+      "svelte": "./dist/index.js",
+      "default": "./dist/index.js"
+    },
+    "./JwPlayerVideo.svelte": {
+      "types": "./dist/components/JwPlayerVideo.svelte.d.ts",
+      "svelte": "./dist/components/JwPlayerVideo.svelte",
+      "default": "./dist/components/JwPlayerVideo.svelte"
+    },
+    "./CloudflareVideo.svelte": {
+      "types": "./dist/components/CloudflareVideo.svelte.d.ts",
+      "svelte": "./dist/components/CloudflareVideo.svelte",
+      "default": "./dist/components/CloudflareVideo.svelte"
+    },
+    "./VideoJsVideo.svelte": {
+      "types": "./dist/components/VideoJsVideo.svelte.d.ts",
+      "svelte": "./dist/components/VideoJsVideo.svelte",
+      "default": "./dist/components/VideoJsVideo.svelte"
+    },
+    "./HlsVideo.svelte": {
+      "types": "./dist/components/HlsVideo.svelte.d.ts",
+      "svelte": "./dist/components/HlsVideo.svelte",
+      "default": "./dist/components/HlsVideo.svelte"
+    },
+    "./DashVideo.svelte": {
+      "types": "./dist/components/DashVideo.svelte.d.ts",
+      "svelte": "./dist/components/DashVideo.svelte",
+      "default": "./dist/components/DashVideo.svelte"
+    },
+    "./MuxVideo.svelte": {
+      "types": "./dist/components/MuxVideo.svelte.d.ts",
+      "svelte": "./dist/components/MuxVideo.svelte",
+      "default": "./dist/components/MuxVideo.svelte"
+    },
+    "./CloudinaryVideo.svelte": {
+      "types": "./dist/components/CloudinaryVideo.svelte.d.ts",
+      "svelte": "./dist/components/CloudinaryVideo.svelte",
+      "default": "./dist/components/CloudinaryVideo.svelte"
+    },
+    "./CustomVideo.svelte": {
+      "types": "./dist/components/CustomVideo.svelte.d.ts",
+      "svelte": "./dist/components/CustomVideo.svelte",
+      "default": "./dist/components/CustomVideo.svelte"
     }
   },
   "peerDependencies": {
@@ -60,6 +104,7 @@
     "publint": "^0.3.15",
     "svelte": "^5.43.8",
     "svelte-check": "^4.3.4",
+    "tslib": "^2.8.1",
     "typescript": "^5.9.3",
     "typescript-eslint": "^8.47.0",
     "vite": "^7.2.2",
@@ -77,6 +122,24 @@
     "videojs-plugin-sveltekit",
     "sveltekit-video-element-plugin",
     "videojs-plugin-sveltekit-video-element",
-    "sveltekit-video-element-plugin"
-  ]
+    "sveltekit-video-element-plugin",
+    "video-player",
+    "jwplayer",
+    "cloudflare",
+    "videojs",
+    "hls",
+    "dash",
+    "mux",
+    "cloudinary",
+    "streaming",
+    "ssr",
+    "tailwindcss"
+  ],
+  "author": "Ketar T Kirantoro",
+  "license": "MIT",
+  "dependencies": {
+    "@tailwindcss/vite": "^4.1.17",
+    "dashjs": "^5.1.0",
+    "hls.js": "^1.6.15"
+  }
 }
