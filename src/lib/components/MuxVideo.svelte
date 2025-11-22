@@ -86,7 +86,7 @@
 						disableCookies: disableCookies,
 						data: {
 							env_key: envKey,
-							player_name: 'sveltekit-video-elements',
+							player_name: 'sveltekit-video-element',
 							player_init_time: Date.now(),
 							video_id: metadata?.video_id || playbackId,
 							video_title: metadata?.video_title,

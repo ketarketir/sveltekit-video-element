@@ -3,7 +3,7 @@
 ## Installation
 
 ```bash
-npm install sveltekit-video-elements
+npm install sveltekit-video-element
 ```
 
 ## Basic Examples
@@ -12,7 +12,7 @@ npm install sveltekit-video-elements
 
 ```svelte
 <script>
-	import { HlsVideo } from 'sveltekit-video-elements';
+	import { HlsVideo } from 'sveltekit-video-element';
 </script>
 
 <HlsVideo
@@ -27,7 +27,7 @@ npm install sveltekit-video-elements
 
 ```svelte
 <script>
-	import { MuxVideo } from 'sveltekit-video-elements';
+	import { MuxVideo } from 'sveltekit-video-element';
 </script>
 
 <MuxVideo
@@ -45,7 +45,7 @@ npm install sveltekit-video-elements
 
 ```svelte
 <script>
-	import { CloudinaryVideo } from 'sveltekit-video-elements';
+	import { CloudinaryVideo } from 'sveltekit-video-element';
 
 	let quality = 'auto';
 </script>
@@ -78,7 +78,7 @@ npm install sveltekit-video-elements
 
 ```svelte
 <script>
-	import { VideoJsVideo } from 'sveltekit-video-elements';
+	import { VideoJsVideo } from 'sveltekit-video-element';
 </script>
 
 <VideoJsVideo
@@ -100,7 +100,7 @@ npm install sveltekit-video-elements
 
 ```svelte
 <script>
-	import { CloudflareVideo } from 'sveltekit-video-elements';
+	import { CloudflareVideo } from 'sveltekit-video-element';
 </script>
 
 <CloudflareVideo videoId="YOUR_VIDEO_ID" accountId="YOUR_ACCOUNT_ID" controls autoplay muted />
@@ -112,7 +112,7 @@ npm install sveltekit-video-elements
 
 ```svelte
 <script>
-	import { HlsVideo } from 'sveltekit-video-elements';
+	import { HlsVideo } from 'sveltekit-video-element';
 
 	let videoRef;
 	let levels = [];
@@ -178,7 +178,7 @@ npm install sveltekit-video-elements
 
 ```svelte
 <script>
-	import { CustomVideo } from 'sveltekit-video-elements';
+	import { CustomVideo } from 'sveltekit-video-element';
 
 	// Example: Integrate with Plyr
 	const plyrPlayer = {
@@ -218,7 +218,7 @@ npm install sveltekit-video-elements
 
 ```svelte
 <script>
-	import { HlsVideo } from 'sveltekit-video-elements';
+	import { HlsVideo } from 'sveltekit-video-element';
 
 	let isPlaying = false;
 	let currentTime = 0;
@@ -314,7 +314,7 @@ export const load: PageServerLoad = async ({ params }) => {
 ```svelte
 <!-- +page.svelte -->
 <script lang="ts">
-	import { HlsVideo } from 'sveltekit-video-elements';
+	import { HlsVideo } from 'sveltekit-video-element';
 	import type { PageData } from './$types';
 
 	export let data: PageData;
@@ -341,7 +341,7 @@ export const load: PageServerLoad = async ({ params }) => {
 
 ```svelte
 <script>
-	import { MuxVideo } from 'sveltekit-video-elements';
+	import { MuxVideo } from 'sveltekit-video-element';
 </script>
 
 <div class="video-aspect-ratio">
@@ -370,7 +370,7 @@ export const load: PageServerLoad = async ({ params }) => {
 
 ```svelte
 <script>
-	import { HlsVideo } from 'sveltekit-video-elements';
+	import { HlsVideo } from 'sveltekit-video-element';
 
 	const videos = [
 		{
@@ -431,8 +431,8 @@ export const load: PageServerLoad = async ({ params }) => {
 
 ```svelte
 <script lang="ts">
-	import { HlsVideo } from 'sveltekit-video-elements';
-	import type { HlsVideoProps } from 'sveltekit-video-elements';
+	import { HlsVideo } from 'sveltekit-video-element';
+	import type { HlsVideoProps } from 'sveltekit-video-element';
 
 	const videoProps: HlsVideoProps = {
 		src: 'https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8',
@@ -454,8 +454,8 @@ export const load: PageServerLoad = async ({ params }) => {
 
 ```svelte
 <script lang="ts">
-	import { MuxVideo } from 'sveltekit-video-elements';
-	import type { MuxVideoProps } from 'sveltekit-video-elements';
+	import { MuxVideo } from 'sveltekit-video-element';
+	import type { MuxVideoProps } from 'sveltekit-video-element';
 
 	let videoRef: typeof MuxVideo;
 

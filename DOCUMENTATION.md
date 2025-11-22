@@ -23,14 +23,14 @@ Complete documentation with live examples for all video components.
 ## Installation
 
 ```bash
-npm install sveltekit-video-elements
+npm install sveltekit-video-element
 ```
 
 ## Quick Start
 
 ```svelte
 <script>
-	import { HlsVideo } from 'sveltekit-video-elements';
+	import { HlsVideo } from 'sveltekit-video-element';
 </script>
 
 <HlsVideo src="https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8" controls autoplay />
@@ -48,7 +48,7 @@ HTTP Live Streaming with hls.js integration. Perfect for adaptive bitrate stream
 
 ```svelte
 <script>
-	import { HlsVideo } from 'sveltekit-video-elements';
+	import { HlsVideo } from 'sveltekit-video-element';
 </script>
 
 <HlsVideo
@@ -63,7 +63,7 @@ HTTP Live Streaming with hls.js integration. Perfect for adaptive bitrate stream
 
 ```svelte
 <script>
-	import { HlsVideo } from 'sveltekit-video-elements';
+	import { HlsVideo } from 'sveltekit-video-element';
 
 	let videoRef;
 	let levels = [];
@@ -153,7 +153,7 @@ Before using Mux Video, fill in your configuration:
 
 ```svelte
 <script>
-	import { MuxVideo } from 'sveltekit-video-elements';
+	import { MuxVideo } from 'sveltekit-video-element';
 	import { writable } from 'svelte/store';
 
 	let muxConfig = writable({
@@ -300,7 +300,7 @@ Enterprise-grade video player with extensive features.
 
 ```svelte
 <script>
-	import { JwPlayerVideo } from 'sveltekit-video-elements';
+	import { JwPlayerVideo } from 'sveltekit-video-element';
 
 	let config = {
 		playerId: '',
@@ -374,7 +374,7 @@ Stream videos with Cloudflare's global CDN.
 
 ```svelte
 <script>
-	import { CloudflareVideo } from 'sveltekit-video-elements';
+	import { CloudflareVideo } from 'sveltekit-video-element';
 
 	let config = {
 		accountId: '',
@@ -460,7 +460,7 @@ Popular open-source HTML5 video player.
 
 ```svelte
 <script>
-	import { VideoJsVideo } from 'sveltekit-video-elements';
+	import { VideoJsVideo } from 'sveltekit-video-element';
 </script>
 
 <VideoJsVideo
@@ -491,7 +491,7 @@ Dynamic Adaptive Streaming over HTTP with dash.js.
 
 ```svelte
 <script>
-	import { DashVideo } from 'sveltekit-video-elements';
+	import { DashVideo } from 'sveltekit-video-element';
 </script>
 
 <DashVideo
@@ -525,7 +525,7 @@ Video transformation and optimization with Cloudinary.
 
 ```svelte
 <script>
-	import { CloudinaryVideo } from 'sveltekit-video-elements';
+	import { CloudinaryVideo } from 'sveltekit-video-element';
 
 	let config = {
 		cloudName: '',
@@ -623,7 +623,7 @@ Integrate your own video player.
 
 ```svelte
 <script>
-	import { CustomVideo } from 'sveltekit-video-elements';
+	import { CustomVideo } from 'sveltekit-video-element';
 
 	const plyrPlayer = {
 		async init(element, config) {
@@ -668,7 +668,7 @@ All components are SSR-compatible:
 
 ```svelte
 <script>
-	import { HlsVideo } from 'sveltekit-video-elements';
+	import { HlsVideo } from 'sveltekit-video-element';
 	import { browser } from '$app/environment';
 </script>
 
@@ -683,7 +683,7 @@ All components are SSR-compatible:
 
 ```svelte
 <script>
-	import { HlsVideo } from 'sveltekit-video-elements';
+	import { HlsVideo } from 'sveltekit-video-element';
 
 	let isPlaying = false;
 	let currentTime = 0;
@@ -750,9 +750,9 @@ All components are SSR-compatible:
 
 ## Support
 
-- 📖 [Full Documentation](https://github.com/yourusername/sveltekit-video-elements)
-- 🐛 [Report Issues](https://github.com/yourusername/sveltekit-video-elements/issues)
-- 💬 [Discussions](https://github.com/yourusername/sveltekit-video-elements/discussions)
+- 📖 [Full Documentation](https://github.com/yourusername/sveltekit-video-element)
+- 🐛 [Report Issues](https://github.com/yourusername/sveltekit-video-element/issues)
+- 💬 [Discussions](https://github.com/yourusername/sveltekit-video-element/discussions)
 
 ## License
 

@@ -5,7 +5,7 @@ Get started with SvelteKit Video Elements in under 5 minutes!
 ## Installation
 
 ```bash
-npm install sveltekit-video-elements
+npm install sveltekit-video-element
 ```
 
 ## Your First Video
@@ -14,7 +14,7 @@ npm install sveltekit-video-elements
 
 ```svelte
 <script>
-	import { HlsVideo } from 'sveltekit-video-elements';
+	import { HlsVideo } from 'sveltekit-video-element';
 </script>
 
 <HlsVideo src="https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8" controls autoplay />
@@ -24,7 +24,7 @@ npm install sveltekit-video-elements
 
 ```svelte
 <script>
-	import { VideoJsVideo } from 'sveltekit-video-elements';
+	import { VideoJsVideo } from 'sveltekit-video-element';
 </script>
 
 <VideoJsVideo src="https://vjs.zencdn.net/v/oceans.mp4" controls />
@@ -36,7 +36,7 @@ npm install sveltekit-video-elements
 
 ```svelte
 <script>
-	import { HlsVideo } from 'sveltekit-video-elements';
+	import { HlsVideo } from 'sveltekit-video-element';
 
 	let videoRef;
 	let levels = [];
@@ -76,7 +76,7 @@ npm install sveltekit-video-elements
 
 ```svelte
 <script>
-	import { MuxVideo } from 'sveltekit-video-elements';
+	import { MuxVideo } from 'sveltekit-video-element';
 </script>
 
 <MuxVideo
@@ -96,7 +96,7 @@ npm install sveltekit-video-elements
 
 ```svelte
 <script>
-	import { CloudinaryVideo } from 'sveltekit-video-elements';
+	import { CloudinaryVideo } from 'sveltekit-video-element';
 </script>
 
 <CloudinaryVideo
@@ -118,7 +118,7 @@ All components support standard HTML5 video events:
 
 ```svelte
 <script>
-	import { HlsVideo } from 'sveltekit-video-elements';
+	import { HlsVideo } from 'sveltekit-video-element';
 
 	let isPlaying = false;
 	let currentTime = 0;
@@ -162,7 +162,7 @@ All components work seamlessly with SvelteKit's SSR:
 
 ```svelte
 <script>
-	import { HlsVideo } from 'sveltekit-video-elements';
+	import { HlsVideo } from 'sveltekit-video-element';
 	import { browser } from '$app/environment';
 </script>
 
@@ -178,7 +178,7 @@ All components work seamlessly with SvelteKit's SSR:
 Full TypeScript support with comprehensive types:
 
 ```typescript
-import type { HlsVideoProps, MuxVideoProps } from 'sveltekit-video-elements';
+import type { HlsVideoProps, MuxVideoProps } from 'sveltekit-video-element';
 
 const hlsProps: HlsVideoProps = {
 	src: 'https://example.com/video.m3u8',
@@ -208,11 +208,11 @@ const hlsProps: HlsVideoProps = {
 - 📚 [Full Documentation](./DOCUMENTATION.md)
 - 🎮 [Interactive Demo](./examples/InteractiveDemo.svelte)
 - 💡 [Advanced Examples](../EXAMPLES.md)
-- 🐛 [Report Issues](https://github.com/yourusername/sveltekit-video-elements/issues)
+- 🐛 [Report Issues](https://github.com/yourusername/sveltekit-video-element/issues)
 
 ## Need Help?
 
 - Check the [documentation](./DOCUMENTATION.md)
 - Browse [examples](../EXAMPLES.md)
-- Open an [issue](https://github.com/yourusername/sveltekit-video-elements/issues)
-- Join [discussions](https://github.com/yourusername/sveltekit-video-elements/discussions)
+- Open an [issue](https://github.com/yourusername/sveltekit-video-element/issues)
+- Join [discussions](https://github.com/yourusername/sveltekit-video-element/discussions)

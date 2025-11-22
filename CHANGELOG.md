@@ -9,7 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- Initial release of sveltekit-video-elements
+- Initial release of sveltekit-video-element
 - JW Player Video component with full configuration support
 - Cloudflare Stream Video component with signed URL support
 - Video.js component with plugin system

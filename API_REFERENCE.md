@@ -185,7 +185,7 @@ class HlsVideo {
 
 ```svelte
 <script>
-	import { HlsVideo } from 'sveltekit-video-elements';
+	import { HlsVideo } from 'sveltekit-video-element';
 
 	let videoRef;
 
@@ -258,7 +258,7 @@ class MuxVideo {
 
 ```svelte
 <script>
-	import { MuxVideo } from 'sveltekit-video-elements';
+	import { MuxVideo } from 'sveltekit-video-element';
 </script>
 
 <MuxVideo
@@ -311,7 +311,7 @@ class JwPlayerVideo {
 
 ```svelte
 <script>
-	import { JwPlayerVideo } from 'sveltekit-video-elements';
+	import { JwPlayerVideo } from 'sveltekit-video-element';
 </script>
 
 <JwPlayerVideo
@@ -359,7 +359,7 @@ class CloudflareVideo {
 
 ```svelte
 <script>
-	import { CloudflareVideo } from 'sveltekit-video-elements';
+	import { CloudflareVideo } from 'sveltekit-video-element';
 </script>
 
 <CloudflareVideo accountId="your-account-id" videoId="your-video-id" controls />
@@ -402,7 +402,7 @@ class VideoJsVideo {
 
 ```svelte
 <script>
-	import { VideoJsVideo } from 'sveltekit-video-elements';
+	import { VideoJsVideo } from 'sveltekit-video-element';
 </script>
 
 <VideoJsVideo
@@ -463,7 +463,7 @@ class DashVideo {
 
 ```svelte
 <script>
-	import { DashVideo } from 'sveltekit-video-elements';
+	import { DashVideo } from 'sveltekit-video-element';
 </script>
 
 <DashVideo
@@ -524,7 +524,7 @@ class CloudinaryVideo {
 
 ```svelte
 <script>
-	import { CloudinaryVideo } from 'sveltekit-video-elements';
+	import { CloudinaryVideo } from 'sveltekit-video-element';
 </script>
 
 <CloudinaryVideo
@@ -577,7 +577,7 @@ class CustomVideo {
 
 ```svelte
 <script>
-	import { CustomVideo } from 'sveltekit-video-elements';
+	import { CustomVideo } from 'sveltekit-video-element';
 
 	const myPlayer = {
 		async init(element, config) {
@@ -619,7 +619,7 @@ function buildMuxUrl(
 **Example:**
 
 ```typescript
-import { buildMuxUrl } from 'sveltekit-video-elements';
+import { buildMuxUrl } from 'sveltekit-video-element';
 
 const url = buildMuxUrl('abc123', {
 	maxResolution: '1080p',
@@ -643,7 +643,7 @@ function buildCloudinaryUrl(
 **Example:**
 
 ```typescript
-import { buildCloudinaryUrl } from 'sveltekit-video-elements';
+import { buildCloudinaryUrl } from 'sveltekit-video-element';
 
 const url = buildCloudinaryUrl(
 	'demo',
@@ -713,7 +713,7 @@ import type {
 	CustomVideoProps,
 	VideoPlayerInstance,
 	VideoEventHandlers
-} from 'sveltekit-video-elements';
+} from 'sveltekit-video-element';
 ```
 
 ### VideoPlayerInstance

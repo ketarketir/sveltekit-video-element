@@ -33,7 +33,7 @@ A comprehensive SvelteKit video component library with support for multiple vide
 ## Installation
 
 ```bash
-npm install sveltekit-video-elements
+npm install sveltekit-video-element
 ```
 
 ## Quick Start
@@ -42,7 +42,7 @@ npm install sveltekit-video-elements
 
 ```svelte
 <script>
-	import { HlsVideo } from 'sveltekit-video-elements';
+	import { HlsVideo } from 'sveltekit-video-element';
 </script>
 
 <HlsVideo
@@ -57,7 +57,7 @@ npm install sveltekit-video-elements
 
 ```svelte
 <script>
-	import { MuxVideo } from 'sveltekit-video-elements';
+	import { MuxVideo } from 'sveltekit-video-element';
 </script>
 
 <MuxVideo
@@ -75,7 +75,7 @@ npm install sveltekit-video-elements
 
 ```svelte
 <script>
-	import { CloudinaryVideo } from 'sveltekit-video-elements';
+	import { CloudinaryVideo } from 'sveltekit-video-element';
 </script>
 
 <CloudinaryVideo
@@ -95,7 +95,7 @@ npm install sveltekit-video-elements
 
 ```svelte
 <script>
-	import { VideoJsVideo } from 'sveltekit-video-elements';
+	import { VideoJsVideo } from 'sveltekit-video-element';
 </script>
 
 <VideoJsVideo
@@ -112,7 +112,7 @@ npm install sveltekit-video-elements
 
 ```svelte
 <script>
-	import { JwPlayerVideo } from 'sveltekit-video-elements';
+	import { JwPlayerVideo } from 'sveltekit-video-element';
 </script>
 
 <JwPlayerVideo
@@ -132,7 +132,7 @@ npm install sveltekit-video-elements
 
 ```svelte
 <script>
-	import { CloudflareVideo } from 'sveltekit-video-elements';
+	import { CloudflareVideo } from 'sveltekit-video-element';
 </script>
 
 <CloudflareVideo videoId="YOUR_VIDEO_ID" accountId="YOUR_ACCOUNT_ID" controls autoplay />
@@ -142,7 +142,7 @@ npm install sveltekit-video-elements
 
 ```svelte
 <script>
-	import { DashVideo } from 'sveltekit-video-elements';
+	import { DashVideo } from 'sveltekit-video-element';
 </script>
 
 <DashVideo
@@ -161,7 +161,7 @@ npm install sveltekit-video-elements
 
 ```svelte
 <script>
-	import { CustomVideo } from 'sveltekit-video-elements';
+	import { CustomVideo } from 'sveltekit-video-element';
 
 	let myCustomPlayer = {
 		init: async (element, config) => {
@@ -394,7 +394,7 @@ All components expose methods via component references:
 
 ```svelte
 <script>
-	import { HlsVideo } from 'sveltekit-video-elements';
+	import { HlsVideo } from 'sveltekit-video-element';
 
 	let videoRef;
 
@@ -465,7 +465,7 @@ export async function load() {
 ```svelte
 <!-- +page.svelte -->
 <script>
-	import { HlsVideo } from 'sveltekit-video-elements';
+	import { HlsVideo } from 'sveltekit-video-element';
 
 	export let data;
 </script>
@@ -477,7 +477,7 @@ export async function load() {
 
 ```svelte
 <script>
-	import { HlsVideo } from 'sveltekit-video-elements';
+	import { HlsVideo } from 'sveltekit-video-element';
 
 	let videoRef;
 	let levels = [];
@@ -507,7 +507,7 @@ export async function load() {
 
 ```svelte
 <script>
-	import { CloudinaryVideo } from 'sveltekit-video-elements';
+	import { CloudinaryVideo } from 'sveltekit-video-element';
 
 	let quality = 'auto';
 	let width = 1280;
@@ -542,7 +542,7 @@ import type {
 	MuxVideoProps,
 	CloudinaryVideoProps,
 	VideoPlayerInstance
-} from 'sveltekit-video-elements';
+} from 'sveltekit-video-element';
 
 const props: HlsVideoProps = {
 	src: 'https://example.com/video.m3u8',
@@ -568,7 +568,7 @@ import {
 	loadScript,
 	debounce,
 	throttle
-} from 'sveltekit-video-elements';
+} from 'sveltekit-video-element';
 
 // Build a Cloudinary URL
 const url = buildCloudinaryUrl('demo', 'video-id', {
