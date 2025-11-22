@@ -96,60 +96,62 @@
 
 			// Forward events
 			player.on('ready', () => {
-				videoEl?.dispatchEvent(new CustomEvent('ready', { detail: { player } }));
+				videoEl?.dispatchEvent(new CustomEvent('vjs:ready', { detail: { player } }));
 			});
 
 			player.on('play', () => {
-				videoEl?.dispatchEvent(new Event('play'));
+				videoEl?.dispatchEvent(new CustomEvent('vjs:play'));
 			});
 
 			player.on('pause', () => {
-				videoEl?.dispatchEvent(new Event('pause'));
+				videoEl?.dispatchEvent(new CustomEvent('vjs:pause'));
 			});
 
 			player.on('ended', () => {
-				videoEl?.dispatchEvent(new Event('ended'));
+				videoEl?.dispatchEvent(new CustomEvent('vjs:ended'));
 			});
 
 			player.on('error', () => {
 				const error = player.error();
 				videoEl?.dispatchEvent(
-					new CustomEvent('error', {
+					new CustomEvent('vjs:error', {
 						detail: { error: error ? error.message : 'Unknown error' }
-					})
+						})
+					);
+				});
+
+			player.on('timeupdate', () => {
+				videoEl?.dispatchEvent(
+					new CustomEvent('vjs:timeupdate', { detail: { currentTime: player.currentTime() } })
 				);
 			});
 
-			player.on('timeupdate', () => {
-				videoEl?.dispatchEvent(new Event('timeupdate'));
-			});
-
 			player.on('volumechange', () => {
-				videoEl?.dispatchEvent(new Event('volumechange'));
+				videoEl?.dispatchEvent(new CustomEvent('vjs:volumechange'));
 			});
 
 			player.on('seeking', () => {
-				videoEl?.dispatchEvent(new Event('seeking'));
+				videoEl?.dispatchEvent(new CustomEvent('vjs:seeking'));
 			});
 
 			player.on('seeked', () => {
-				videoEl?.dispatchEvent(new Event('seeked'));
+				videoEl?.dispatchEvent(new CustomEvent('vjs:seeked'));
 			});
 
 			player.on('loadedmetadata', () => {
-				videoEl?.dispatchEvent(new Event('loadedmetadata'));
+				videoEl?.dispatchEvent(new CustomEvent('vjs:loadedmetadata'));
 			});
 
 			player.on('loadeddata', () => {
-				videoEl?.dispatchEvent(new Event('loadeddata'));
+				videoEl?.dispatchEvent(new CustomEvent('vjs:loadeddata'));
 			});
 
 			player.on('canplay', () => {
-				videoEl?.dispatchEvent(new Event('canplay'));
+				videoEl?.dispatchEvent(new CustomEvent('vjs:canplay'));
 			});
 
 			player.on('canplaythrough', () => {
-				videoEl?.dispatchEvent(new Event('canplaythrough'));
+				videoEl?.dispatchEvent(new CustomEvent('vjs:canplaythrough'));
 			});
 		} catch (error) {
 			console.error('Failed to initialize Video.js:', error);

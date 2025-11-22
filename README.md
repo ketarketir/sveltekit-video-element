@@ -2,6 +2,14 @@
 
 A comprehensive SvelteKit video component library with support for multiple video players and streaming platforms. Built with TypeScript, SSR support, and optimized for modern web applications.
 
+## 📚 Documentation
+
+- **[Quick Start Guide](./docs/QUICK_START.md)** - Get started in 5 minutes
+- **[Full Documentation](./docs/DOCUMENTATION.md)** - Complete guide with examples
+- **[API Reference](./docs/API_REFERENCE.md)** - Detailed API documentation
+- **[Interactive Demo](./docs/examples/InteractiveDemo.svelte)** - Live component examples
+- **[Advanced Examples](./EXAMPLES.md)** - Real-world use cases
+
 ## Features
 
 - ✅ **Full SSR Support** - Works seamlessly with SvelteKit's server-side rendering
